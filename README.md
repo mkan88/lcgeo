@@ -23,8 +23,8 @@ DD4hep built with Geant4 and LCIO
   * `source /cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/init_ilcsoft.sh`
   * `cd lcgeo/build`
 ### Prepare Build Environment
-  * `cmake -DCMAKE_CXX_COMPILER=\`which g++\` -DCMAKE_C_COMPILER=\`which gcc\` -C /cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/ILCSoft.cmake ..`
-  * `cmake -DCMAKE_CXX_COMPILER=\`which g++\` -DCMAKE_C_COMPILER=\`which gcc\` -DILCUTIL_DIR=/cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/ILCSoft.cmake -C $ILCSOFT/ILCSoft.cmake ..`
+  * `cmake -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_C_COMPILER=$(which gcc\) -C /cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/ILCSoft.cmake ..`
+  * `cmake -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_C_COMPILER=$(which gcc\) -DILCUTIL_DIR=/cvmfs/ilc.desy.de/sw/x86_64_gcc49_sl6/v02-00-01/ILCSoft.cmake -C $ILCSOFT/ILCSoft.cmake ..`
 ### Build
   * `make -j4`
   * `make install`
